@@ -48,19 +48,48 @@ header {
   z-index: 1;
 }
 
+#search-form {
+  align-items: center;
+  border: white;
+  border-style: solid none solid;
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+
+#search-icon {
+  background: url('/assets/images/vv-icn-search-magnifying-glass.png') no-repeat;
+  height: 20px;
+  padding-right: 4px;
+  vertical-align: bottom;
+  width: 20px;
+}
+
 #search-bar {
   background: transparent;
+  border: transparent;
+  color: #fff;
+  font-size: 20px;
+  height: 30px;
+  margin: 0;
+  padding: 15px 15px 15px;
+  width: 100%;
+}
+
+#search-bar::placeholder {
+  color: #fff;
+  text-shadow: -1px 0px 0 rgba(169, 0, 255, 1), -2px 0px 0 rgba(16, 10, 255, 1);
 }
 /****** filter search aside ******/
 
 #filter-search {
-  margin: 0 120px;
   min-width: 12rem;
   width: 2rem;
 }
 
 ol {
   padding: 0;
+  list-style-type: none;
 }
 
 /****** video list main content ******/
@@ -70,6 +99,11 @@ ol {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 120px;
+}
+
+#found-film-heading {
+  margin-top: 0;
 }
 
 .film-divide-line {
@@ -87,5 +121,5 @@ ol {
   box-shadow: -3px, 1.6px 0 rgba(16, 10, 255, 1),
     0px -1.5px 0 rgba(169, 0, 255, 1), 2px 1.5px 0 rgba(255, 0, 105, 1);
   height: 3px;
-  width: calc(100% - 240px);
+  width: 100%;
 }
