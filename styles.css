@@ -2,37 +2,37 @@ body {
   background: black;
   background-attachment: fixed;
   min-width: 375px;
-  z-index: -10;
   text-shadow: -1px 0px 0px #a900ff, -2px 0px 0 #100aff;
+  z-index: -10;
 }
 
 /****** page header ******/
 
 header {
-  position: relative;
-  width: 100%;
   height: 100%;
   overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 #background-video {
-  width: 100%;
   height: auto;
-  min-width: 100%;
   min-height: 100%;
+  min-width: 100%;
+  width: 100%;
 }
 
 #program-guide {
+  align-items: flex-start;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  position: absolute;
-  margin: 0 120px;
-  top: 0;
-  right: 0;
   left: 0;
-  bottom: 0;
+  margin: 0 120px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 #company-logo {
@@ -54,7 +54,8 @@ header {
 /****** filter search aside ******/
 
 #filter-search {
+  background: #fff;
+  margin: 0 120px;
   min-width: 12rem;
   width: 2rem;
-  background: #fff;
 }
