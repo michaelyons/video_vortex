@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  /*  Background fallback in case of IE8 or if video doens't load */
+  background: black;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#background-video {
+  height: auto;
+  width: 100%;
+}
+
+/****** header ******/
+/* styles goes here... */
+/****** navigation ******/
+/* styles goes here... */
+/****** main content ******/
+/* styles goes here... */
+/****** footer ******/
+/* styles go here... */
