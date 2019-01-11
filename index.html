@@ -19,147 +19,225 @@
           alt="Video Vortex Logo"
           id="company-logo"
         />
-        <div><p id="updated-time">last updated:</p></div>
+        <div><p id="updated-time"></p></div>
         <form>
           <input id="search-bar" type="text" placeholder="Search Selection" />
         </form>
       </section>
     </header>
-    <aside id="filter-search">
-      <ol>
-        <li>
-          <label for="staff-picks"
-            >Staff Picks
-            <input type="checkbox" name="staff-picks" id="aside-checkbox" />
-            <span class="shadow-checkboxes"></span>
-            <span class="checkbox-values">68</span>
-          </label>
-        </li>
-        <li>
-          <label for="new-additions"
-            >New Additions
-            <input type="checkbox" name="new-additions" id="aside-checkbox" />
-            <span class="shadow-checkboxes"></span>
-            <span class="checkbox-values">16</span>
-          </label>
-        </li>
-        <li>
-          <label for="format">format</label>
-          <input type="checkbox" name="format" class="dropdown-filter" />
-          <ol>
-            <li>
-              <label for="blu-ray"
-                >blu-ray <input type="checkbox" name="blu-ray" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">405</span>
-              </label>
-            </li>
-            <li>
-              <label for="dvd"
-                >dvd <input type="checkbox" name="dvd" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">1,340</span>
-              </label>
-            </li>
-            <li>
-              <label for="vhs"
-                >vhs <input type="checkbox" name="vhs" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">129</span>
-              </label>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <label for="genre">genre</label>
-          <input type="checkbox" name="genre" class="dropdown-filter" />
-          <ol>
-            <li>
-              <label for="drama"
-                >drama <input type="checkbox" name="drama" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">405</span>
-              </label>
-            </li>
-            <li>
-              <label for="action"
-                >action <input type="checkbox" name="action" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">1,340</span>
-              </label>
-            </li>
-            <li>
-              <label for="comedy"
-                >comedy <input type="checkbox" name="comedy" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">129</span>
-              </label>
-            </li>
-            <li>
-              <label for="documentary"
-                >documentary <input type="checkbox" name="documentary" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">129</span>
-              </label>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <label for="decade">decade</label>
-          <input type="checkbox" name="decade" class="dropdown-filter" />
-          <ol>
-            <li>
-              <label for="fifty"
-                >1950's <input type="checkbox" name="fifty" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">405</span>
-              </label>
-            </li>
-            <li>
-              <label for="sixty"
-                >1960's <input type="checkbox" name="sixty" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">1,340</span>
-              </label>
-            </li>
-            <li>
-              <label for="seventy"
-                >1970's <input type="checkbox" name="seventy" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">129</span>
-              </label>
-            </li>
-            <li>
-              <label for="eighties"
-                >1980's <input type="checkbox" name="eighties" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">129</span>
-              </label>
-            </li>
-            <li>
-              <label for="nineties"
-                >1990's <input type="checkbox" name="nineties" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">129</span>
-              </label>
-            </li>
-            <li>
-              <label for="two-thousand"
-                >2000's <input type="checkbox" name="two-thousand" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">129</span>
-              </label>
-            </li>
-            <li>
-              <label for="two-thousand-ten"
-                >2010's <input type="checkbox" name="two-thousand-ten" />
-                <span class="shadow-checkboxes"></span>
-                <span class="checkbox-values">129</span>
-              </label>
-            </li>
-          </ol>
-        </li>
-      </ol>
-    </aside>
+    <div id="main-container">
+      <aside id="filter-search">
+        <ol>
+          <li>
+            <label for="staff-picks"
+              >Staff Picks
+              <input type="checkbox" name="staff-picks" id="aside-checkbox" />
+              <span class="shadow-checkboxes"></span>
+              <span class="checkbox-values">68</span>
+            </label>
+          </li>
+          <li>
+            <label for="new-additions"
+              >New Additions
+              <input type="checkbox" name="new-additions" id="aside-checkbox" />
+              <span class="shadow-checkboxes"></span>
+              <span class="checkbox-values">16</span>
+            </label>
+          </li>
+          <li>
+            <label for="format">format</label>
+            <input type="checkbox" name="format" class="dropdown-filter" />
+            <ol>
+              <li>
+                <label for="blu-ray"
+                  >blu-ray <input type="checkbox" name="blu-ray" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">405</span>
+                </label>
+              </li>
+              <li>
+                <label for="dvd"
+                  >dvd <input type="checkbox" name="dvd" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">1,340</span>
+                </label>
+              </li>
+              <li>
+                <label for="vhs"
+                  >vhs <input type="checkbox" name="vhs" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">129</span>
+                </label>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <label for="genre">genre</label>
+            <input type="checkbox" name="genre" class="dropdown-filter" />
+            <ol>
+              <li>
+                <label for="drama"
+                  >drama <input type="checkbox" name="drama" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">405</span>
+                </label>
+              </li>
+              <li>
+                <label for="action"
+                  >action <input type="checkbox" name="action" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">1,340</span>
+                </label>
+              </li>
+              <li>
+                <label for="comedy"
+                  >comedy <input type="checkbox" name="comedy" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">129</span>
+                </label>
+              </li>
+              <li>
+                <label for="documentary"
+                  >documentary <input type="checkbox" name="documentary" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">129</span>
+                </label>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <label for="decade">decade</label>
+            <input type="checkbox" name="decade" class="dropdown-filter" />
+            <ol>
+              <li>
+                <label for="fifty"
+                  >1950's <input type="checkbox" name="fifty" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">405</span>
+                </label>
+              </li>
+              <li>
+                <label for="sixty"
+                  >1960's <input type="checkbox" name="sixty" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">1,340</span>
+                </label>
+              </li>
+              <li>
+                <label for="seventy"
+                  >1970's <input type="checkbox" name="seventy" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">129</span>
+                </label>
+              </li>
+              <li>
+                <label for="eighties"
+                  >1980's <input type="checkbox" name="eighties" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">129</span>
+                </label>
+              </li>
+              <li>
+                <label for="nineties"
+                  >1990's <input type="checkbox" name="nineties" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">129</span>
+                </label>
+              </li>
+              <li>
+                <label for="two-thousand"
+                  >2000's <input type="checkbox" name="two-thousand" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">129</span>
+                </label>
+              </li>
+              <li>
+                <label for="two-thousand-ten"
+                  >2010's <input type="checkbox" name="two-thousand-ten" />
+                  <span class="shadow-checkboxes"></span>
+                  <span class="checkbox-values">129</span>
+                </label>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </aside>
+      <main>
+        <h3>14 titles found for <span>staff picks + drama</span></h3>
+        <article>
+          <p>$5 a day</p>
+          <p>USA | 2008 | 98 mins | Blu-Ray <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>$9.99 a Day</p>
+          <p>Australia, Israel | 2008 | 78 mins | DVD <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>'68</p>
+          <p>USA | 1987 | 98 mins | DVD <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>'71</p>
+          <p>UK | 2014 | 99 mins | DVD <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>(500) Days of Summer</p>
+          <p>USA | 2009 | 95 mins | DVD <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>...And God Created Women</p>
+          <p>France, Italy | 1956 | 92 mins | DVD <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>0.45</p>
+          <p>USA | 2006 | 97 mins | DVD <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>077 Our Man in Casablanca / Mission Casablanca</p>
+          <p>Italy, France | 1966 | 84 mins | DVD <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>1</p>
+          <p>USA | 2013 | 111 mins | Blu-Ray <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>1 a Minute</p>
+          <p>USA | 2010 | 110 mins | DVD <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>1 Giant Leap</p>
+          <p>UK | 2002 | 155 mins | DVD <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>1 Love: A Tribute to Basketball in America</p>
+          <p>USA | 2009 | 95 mins | DVD <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>1 Message</p>
+          <p>USA | 2011 | 152 mins | DVD <button>...</button></p>
+        </article>
+        <hr class="film-divide-line" />
+        <article>
+          <p>1,000 Eyes of Dr. Mabuse, The</p>
+          <p>
+            France, Italy, Germany | 1960 | 103 mins | DVD <button>...</button>
+          </p>
+        </article>
+        <hr class="film-divide-line" />
+      </main>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
