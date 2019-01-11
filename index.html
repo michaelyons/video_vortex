@@ -8,9 +8,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Video Vortex</title>
   </head>
-  <body>
-    <video autoplay loop id="background-video">
-      <source src="/assets/vv-grid-bg.mp4" type="video/mp4" />
-    </video>
+  <body class="page-font">
+    <div class="wrapper">
+      <header>
+        <!-- autoplay loop -->
+        <video id="background-video">
+          <source src="/assets/images/vv-grid-bg.mp4" type="video/mp4" />
+        </video>
+        <img
+          src="/assets/images/vv-logo.svg"
+          alt="Video Vortex Logo"
+          id="company-logo"
+        />
+      </header>
+      <section id="program-guide">
+        <div><p id="updated-time">poop</p></div>
+        <form>
+          <input id="search-bar" type="text" placeholder="Search Selection" />
+        </form>
+      </section>
+      <aside id="filter-search">
+        <form action=""><input type="checkbox" /></form>
+      </aside>
+    </div>
   </body>
 </html>
