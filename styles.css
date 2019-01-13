@@ -51,8 +51,7 @@ header {
 }
 
 #company-logo {
-  height: 40px;
-  width: 200px;
+  height: 50px;
   z-index: 1;
 }
 
@@ -67,6 +66,11 @@ header {
 
 #search-container {
   width: 100%;
+}
+
+#hamburger-icon,
+#hamburger-menu-label {
+  display: none;
 }
 
 #search-form {
@@ -206,14 +210,51 @@ main {
   margin-top: 0;
 }
 
+#found-film-heading {
+  text-transform: uppercase;
+  margin: 3px 0 20px;
+  font-size: 12px;
+}
+
+.video-title {
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+.video-details {
+  color: #f25597;
+  text-shadow: -2px 12px 0 #000, -1.5px 0px 0 rgba(169, 0, 255, 1);
+  font-size: 13px;
+  padding: 3px 0;
+}
+
+.film-details-button {
+  margin-left: 37px;
+  color: #f25597;
+  border: transparent;
+  background: transparent;
+  text-shadow: -1.5px 0px 0 rgba(169, 0, 255, 1);
+  letter-spacing: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  vertical-align: text-bottom;
+}
+
 .film-divide-line {
-  /* border: transparent; */
+  border: transparent;
   font-size: 7px;
   margin: 5px 0 8px;
   overflow: hidden;
   text-shadow: -6.85px -0.8px 0 rgba(169, 0, 255, 1),
     3px 0.8px 0 rgba(16, 10, 255, 1), 1px 0.8px 0 rgba(255, 0, 105, 1);
   width: 100%;
+}
+
+.film-divide-line:after {
+  content: '------------------------------------------------------------------------------------------';
+  letter-spacing: 4px;
+  color: #fff;
+  white-space: nowrap;
 }
 
 .bottom-line {
