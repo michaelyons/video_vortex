@@ -19,183 +19,208 @@
           alt="Video Vortex Logo"
           id="company-logo"
         />
-        <div><p id="updated-time"></p></div>
-        <form id="search-form">
-          <div id="search-icon"></div>
-          <input id="search-bar" type="text" placeholder="Search Selection" />
-        </form>
-        <menu>
-          <ol id="hamburger-menu">
-            <li>
-              <label id="staff-checkbox" for="staff-picks"
-                >Staff Picks
-                <input
-                  type="checkbox"
-                  name="staff-picks"
-                  class="checkbox single"
-                />
-                <span class="custom-checkboxes"></span>
-                <span class="checkbox-values">68</span>
-              </label>
-            </li>
-            <li>
-              <label id="staff-checkbox" for="new-additions"
-                >New Additions
-                <input
-                  type="checkbox"
-                  name="new-additions"
-                  class="checkbox single"
-                />
-                <span class="custom-checkboxes"></span>
-                <span class="checkbox-values">16</span>
-              </label>
-            </li>
-            <li>
-              <label for="format">format</label>
-              <input type="checkbox" name="format" class="checkbox multi" />
-              <ol>
-                <li>
-                  <span class="custom-checkboxes"></span>
+        <div id="search-container">
+          <div><p id="updated-time"></p></div>
+          <form id="search-form">
+            <div id="search-icon"></div>
+            <input id="search-bar" type="text" placeholder="Search Selection" />
+            <div id="hanburger-icon">
+              <span id="hamburger-menu-label">filter</span>
+            </div>
+          </form>
+          <menu>
+            <ol id="hamburger-menu">
+              <li>
+                <label id="staff-checkbox" for="staff-picks"
+                  >Staff Picks
                   <input
                     type="checkbox"
-                    name="blu-ray"
-                    class="aside-checkbox single"
+                    name="staff-picks"
+                    class="checkbox single"
                   />
-                  <label for="blu-ray" class="checkbox-label"
-                    >blu-ray <span class="checkbox-values">405</span>
-                  </label>
-                </li>
-                <li>
                   <span class="custom-checkboxes"></span>
-                  <input type="checkbox" name="dvd" class="aside-checkbox" />
-                  <label for="dvd" class="checkbox-label"
-                    >dvd <span class="checkbox-values">1,340</span>
-                  </label>
-                </li>
-                <li>
-                  <span class="custom-checkboxes"></span>
-                  <input type="checkbox" name="vhs" class="aside-checkbox" />
-                  <label for="vhs" class="checkbox-label"
-                    >vhs <span class="checkbox-values">129</span>
-                  </label>
-                </li>
-              </ol>
-            </li>
-            <li>
-              <input type="checkbox" name="genre" class="dropdown-filter" />
-              <label for="genre" class="checkbox-label">genre</label>
-              <ol>
-                <li>
-                  <span class="custom-checkboxes"></span>
-                  <input type="checkbox" name="drama" class="aside-checkbox" />
-                  <label for="drama" class="checkbox-label"
-                    >drama <span class="checkbox-values"></span>
-                  </label>
-                </li>
-                <li>
-                  <span class="custom-checkboxes"></span>
-                  <input type="checkbox" name="action" class="aside-checkbox" />
-                  <label for="action" class="checkbox-label"
-                    >action <span class="checkbox-values"></span>
-                  </label>
-                </li>
-                <li>
-                  <span class="custom-checkboxes"></span>
-                  <input type="checkbox" name="comedy" class="aside-checkbox" />
-                  <label for="comedy" class="checkbox-label"
-                    >comedy <span class="checkbox-values"></span>
-                  </label>
-                </li>
-                <li>
-                  <span class="custom-checkboxes"></span>
+                  <span class="checkbox-values">68</span>
+                </label>
+              </li>
+              <li>
+                <label id="staff-checkbox" for="new-additions"
+                  >New Additions
                   <input
                     type="checkbox"
-                    name="documentary"
-                    class="aside-checkbox"
+                    name="new-additions"
+                    class="checkbox single"
                   />
-                  <label for="documentary" class="checkbox-label"
-                    >documentary <span class="checkbox-values"></span>
-                  </label>
-                </li>
-              </ol>
-            </li>
-            <li>
-              <input type="checkbox" name="decade" class="dropdown-filter" />
-              <label for="decade" class="checkbox-label">decade</label>
-              <ol>
-                <li>
                   <span class="custom-checkboxes"></span>
-                  <input type="checkbox" name="fifty" class="aside-checkbox" />
-                  <label for="fifty" class="checkbox-label"
-                    >1950's <span class="checkbox-values"></span>
-                  </label>
-                </li>
-                <li>
-                  <span class="custom-checkboxes"></span>
-                  <input type="checkbox" name="sixty" class="aside-checkbox" />
-                  <label for="sixty" class="checkbox-label"
-                    >1960's <span class="checkbox-values"></span>
-                  </label>
-                </li>
-                <li>
-                  <span class="custom-checkboxes"></span>
-                  <input
-                    type="checkbox"
-                    name="seventy"
-                    class="aside-checkbox"
-                  />
-                  <label for="seventy" class="checkbox-label"
-                    >1970's <span class="checkbox-values"></span>
-                  </label>
-                </li>
-                <li>
-                  <span class="custom-checkboxes"></span>
-                  <input
-                    type="checkbox"
-                    name="eighties"
-                    class="aside-checkbox"
-                  />
-                  <label for="eighties" class="checkbox-label"
-                    >1980's <span class="checkbox-values"></span>
-                  </label>
-                </li>
-                <li>
-                  <span class="custom-checkboxes"></span>
-                  <input
-                    type="checkbox"
-                    name="nineties"
-                    class="aside-checkbox"
-                  />
-                  <label for="nineties" class="checkbox-label"
-                    >1990's <span class="checkbox-values"></span>
-                  </label>
-                </li>
-                <li>
-                  <span class="custom-checkboxes"></span>
-                  <input
-                    type="checkbox"
-                    name="two-thousand"
-                    class="aside-checkbox"
-                  />
-                  <label for="two-thousand" class="checkbox-label"
-                    >2000's <span class="checkbox-values"></span>
-                  </label>
-                </li>
-                <li>
-                  <span class="custom-checkboxes"></span>
-                  <input
-                    type="checkbox"
-                    name="two-thousand-ten"
-                    class="aside-checkbox"
-                  />
-                  <label for="two-thousand-ten" class="checkbox-label"
-                    >2010's <span class="checkbox-values"></span>
-                  </label>
-                </li>
-              </ol>
-            </li>
-          </ol>
-        </menu>
+                  <span class="checkbox-values">16</span>
+                </label>
+              </li>
+              <li>
+                <label for="format">format</label>
+                <input type="checkbox" name="format" class="checkbox multi" />
+                <ol>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="blu-ray"
+                      class="aside-checkbox single"
+                    />
+                    <label for="blu-ray" class="checkbox-label"
+                      >blu-ray <span class="checkbox-values">405</span>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input type="checkbox" name="dvd" class="aside-checkbox" />
+                    <label for="dvd" class="checkbox-label"
+                      >dvd <span class="checkbox-values">1,340</span>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input type="checkbox" name="vhs" class="aside-checkbox" />
+                    <label for="vhs" class="checkbox-label"
+                      >vhs <span class="checkbox-values">129</span>
+                    </label>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <input type="checkbox" name="genre" class="dropdown-filter" />
+                <label for="genre" class="checkbox-label">genre</label>
+                <ol>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="drama"
+                      class="aside-checkbox"
+                    />
+                    <label for="drama" class="checkbox-label"
+                      >drama <span class="checkbox-values"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="action"
+                      class="aside-checkbox"
+                    />
+                    <label for="action" class="checkbox-label"
+                      >action <span class="checkbox-values"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="comedy"
+                      class="aside-checkbox"
+                    />
+                    <label for="comedy" class="checkbox-label"
+                      >comedy <span class="checkbox-values"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="documentary"
+                      class="aside-checkbox"
+                    />
+                    <label for="documentary" class="checkbox-label"
+                      >documentary <span class="checkbox-values"></span>
+                    </label>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <input type="checkbox" name="decade" class="dropdown-filter" />
+                <label for="decade" class="checkbox-label">decade</label>
+                <ol>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="fifty"
+                      class="aside-checkbox"
+                    />
+                    <label for="fifty" class="checkbox-label"
+                      >1950's <span class="checkbox-values"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="sixty"
+                      class="aside-checkbox"
+                    />
+                    <label for="sixty" class="checkbox-label"
+                      >1960's <span class="checkbox-values"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="seventy"
+                      class="aside-checkbox"
+                    />
+                    <label for="seventy" class="checkbox-label"
+                      >1970's <span class="checkbox-values"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="eighties"
+                      class="aside-checkbox"
+                    />
+                    <label for="eighties" class="checkbox-label"
+                      >1980's <span class="checkbox-values"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="nineties"
+                      class="aside-checkbox"
+                    />
+                    <label for="nineties" class="checkbox-label"
+                      >1990's <span class="checkbox-values"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="two-thousand"
+                      class="aside-checkbox"
+                    />
+                    <label for="two-thousand" class="checkbox-label"
+                      >2000's <span class="checkbox-values"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="custom-checkboxes"></span>
+                    <input
+                      type="checkbox"
+                      name="two-thousand-ten"
+                      class="aside-checkbox"
+                    />
+                    <label for="two-thousand-ten" class="checkbox-label"
+                      >2010's <span class="checkbox-values"></span>
+                    </label>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </menu>
+        </div>
       </section>
     </header>
     <div id="main-container">
@@ -430,7 +455,7 @@
         </article>
         <hr class="film-divide-line" />
       </main>
-      <hr id="bottom-line" />
+      <hr class="bottom-line" />
     </div>
     <script src="index.js"></script>
   </body>
