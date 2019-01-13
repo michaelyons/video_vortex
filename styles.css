@@ -52,13 +52,14 @@ header {
 #company-logo {
   height: 50px;
   z-index: 1;
+  margin-top: 41px;
 }
 
 #updated-time {
   color: #fff;
   font-size: 12px;
   margin: 25px 0;
-  padding: 15px 0 0;
+  padding: 14px 0 0;
   text-transform: uppercase;
   z-index: 1;
 }
@@ -98,7 +99,7 @@ header {
   background: url('/assets/images/vv-icn-search-magnifying-glass.png') no-repeat;
   height: 30px;
   position: absolute;
-  top: 32px;
+  top: 20px;
   width: 30px;
   vertical-align: bottom;
 }
@@ -111,7 +112,7 @@ header {
   height: 30px;
   margin: 0;
   outline: none;
-  padding: 30px 30px 30px;
+  padding: 20px 20px 20px;
   width: 100%;
 }
 
@@ -122,6 +123,7 @@ header {
 
 #search-bar::placeholder {
   color: #fff;
+  padding-left: 15px;
   text-shadow: -1px 0px 0 rgba(169, 0, 255, 1), -2px 0px 0 rgba(16, 10, 255, 1);
 }
 
@@ -132,26 +134,56 @@ header {
   width: 12rem;
 }
 
-/* .dropdown-filter {
+.sorted {
   opacity: 0;
-  z-index: 3;
+  z-index: 4;
 }
 
 .aside-checkbox {
   opacity: 0;
-  z-index: 2;
-} */
+}
+
+.sorted + ol::before {
+  content: '';
+  background-image: url('/assets/images/vv-arrow-menu-and-filter.svg');
+  background-position: center;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  transition: 0.35 ease-in-out;
+}
+
+.sorted:checked + ol:before {
+  transform: rotate(90deg);
+}
+
+li {
+  position: relative;
+  list-style-type: none;
+  color: #fff;
+}
+
+li label {
+  display: block;
+  margin: 0 0 30px;
+  padding-left: 30px;
+}
+
+li input {
+  position: absolute;
+  cursor: pointer;
+  left: -20px;
+  top: 0;
+  width: 160px;
+  height: 20px;
+}
 
 #hamburger-menu {
   display: none;
   color: #fff;
-}
-
-.dropdown-filter {
-  background: url('/assets/images/vv-arrow-menu-and-filter.svg');
-  content: '';
-  height: 20px;
-  width: 20px;
 }
 
 .custom-checkboxes {
@@ -162,16 +194,22 @@ header {
   height: 20px;
   position: absolute;
   width: 20px;
-  z-index: 1;
+  z-index: -8;
 }
 
-.single:checked + .custom-checkboxes::after {
+.single:checked + .custom-checkboxes::before {
   background: url('./assets/images/vv-check.svg') no-repeat;
   content: '';
   display: block;
   height: 100px;
   position: absolute;
   width: 100px;
+  top: 3px;
+  left: 3px;
+}
+
+.single:checked + .custom-checkboxes {
+  border: 2px solid #f25597;
 }
 
 .checkbox-label {
@@ -247,6 +285,7 @@ main {
 
 .film-divide-line {
   border: transparent;
+  /* overflow: hidden; */
   font-size: 7px;
   margin: 5px 0 8px;
   text-shadow: -6.4px -0.5px 0 rgba(169, 0, 255, 1),
@@ -256,7 +295,7 @@ main {
 
 .film-divide-line::after {
   color: #fff;
-  content: '--------------------------------------------------------------------------------------------------------------------------------------------------------';
+  content: '----------------------------------------------------------------------------------------------------------------------------------------------';
   letter-spacing: 4px;
   white-space: nowrap;
 }
