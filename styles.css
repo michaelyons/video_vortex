@@ -130,8 +130,8 @@ header {
 /****** filter search aside ******/
 
 #filter-search {
-  min-width: 12rem;
-  width: 12rem;
+  flex: 3;
+  min-width: 25%;
 }
 
 .sorted {
@@ -153,7 +153,7 @@ header {
   width: 20px;
   height: 20px;
   top: 2px;
-  transition: 0.35 ease-in-out;
+  transition: 0.15 ease-in-out;
 }
 
 .sorted:checked + ol:before {
@@ -170,6 +170,7 @@ li label {
   display: block;
   margin: 0 0 30px;
   padding-left: 30px;
+  transform: translateY(5px);
 }
 
 li input {
@@ -236,6 +237,7 @@ label {
 ol {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 /****** video list main content ******/
@@ -245,11 +247,11 @@ ol {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 120px;
+  margin: 25px 120px;
 }
 
 main {
-  width: calc(100% - 12rem);
+  flex: 8;
 }
 
 #found-film-heading {
@@ -294,9 +296,9 @@ main {
 
 .film-divide-line {
   border: transparent;
-  /* overflow: hidden; */
   font-size: 7px;
   margin: 5px 0 8px;
+  overflow: scroll;
   text-shadow: -6.4px -0.5px 0 rgba(169, 0, 255, 1),
     2.7px 0.8px 0 rgba(16, 10, 255, 1), 1px 0.8px 0 rgba(255, 0, 105, 1);
   width: 100%;
@@ -304,7 +306,7 @@ main {
 
 .film-divide-line::after {
   color: #fff;
-  content: '----------------------------------------------------------------------------------------------------------------------------------------------';
+  content: '--------------------------------------------';
   letter-spacing: 4px;
   white-space: nowrap;
 }
@@ -316,6 +318,7 @@ main {
   height: 2px;
   margin: 60px auto;
   width: 100%;
+  overflow: hidden;
 }
 
 /****** media queries ******/
