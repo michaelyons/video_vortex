@@ -208,7 +208,7 @@ li input:checked + ol > li {
 }
 
 .single:checked + .custom-checkboxes::before {
-  background: url('/assets/images/vv-check.svg') no-repeat;
+  background: url('./assets/images/vv-check.svg') no-repeat;
   content: '';
   display: block;
   height: 100px;
@@ -306,7 +306,7 @@ main {
 
 .film-divide-line::after {
   color: #fff;
-  content: '-------------------------------------------------------------------------------------------------------------------------------------------------------------------';
+  content: '----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------';
   letter-spacing: 4px;
   display: inline-block;
   position: absolute;
@@ -347,7 +347,7 @@ main {
     display: none;
   }
 
-  #hanburger-icon {
+  #hamburger-icon {
     background: url('/assets/images/vv-icn-filter.svg') no-repeat;
     display: block;
     height: 28px;
