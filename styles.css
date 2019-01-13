@@ -181,6 +181,15 @@ li input {
   height: 20px;
 }
 
+li input + ol > li {
+  display: none;
+}
+
+li input:checked + ol > li {
+  display: block;
+  margin: 0 0 0 5px;
+}
+
 #hamburger-menu {
   display: none;
   color: #fff;
