@@ -96,8 +96,7 @@ header {
 }
 
 #search-icon {
-  background: url('./assets/images/vv-icn-search-magnifying-glass.png')
-    no-repeat;
+  background: url('/assets/images/vv-icn-search-magnifying-glass.png') no-repeat;
   height: 30px;
   position: absolute;
   top: 20px;
@@ -146,7 +145,7 @@ header {
 
 .sorted + ol::before {
   content: '';
-  background-image: url('./assets/images/vv-arrow-menu-and-filter.svg');
+  background-image: url('/assets/images/vv-arrow-menu-and-filter.svg');
   background-position: center;
   background-size: cover;
   display: block;
@@ -209,7 +208,7 @@ li input:checked + ol > li {
 }
 
 .single:checked + .custom-checkboxes::before {
-  background: url('./assets/images/vv-check.svg') no-repeat;
+  background: url('/assets/images/vv-check.svg') no-repeat;
   content: '';
   display: block;
   height: 100px;
@@ -349,7 +348,7 @@ main {
   }
 
   #hanburger-icon {
-    background: url('./assets/images/vv-icn-filter.svg') no-repeat;
+    background: url('/assets/images/vv-icn-filter.svg') no-repeat;
     display: block;
     height: 28px;
     position: absolute;
