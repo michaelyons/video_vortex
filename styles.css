@@ -298,7 +298,7 @@ main {
   border: transparent;
   font-size: 7px;
   margin: 5px 0 8px;
-  overflow: scroll;
+  position: relative;
   text-shadow: -6.4px -0.5px 0 rgba(169, 0, 255, 1),
     2.7px 0.8px 0 rgba(16, 10, 255, 1), 1px 0.8px 0 rgba(255, 0, 105, 1);
   width: 100%;
@@ -306,9 +306,13 @@ main {
 
 .film-divide-line::after {
   color: #fff;
-  content: '--------------------------------------------';
+  content: '-------------------------------------------------------------------------------------------------------------------------------------------------------------------';
   letter-spacing: 4px;
+  display: inline-block;
+  position: absolute;
   white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
 }
 
 .bottom-line {
