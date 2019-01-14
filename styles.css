@@ -96,7 +96,7 @@ header {
 }
 
 #search-icon {
-  background: url('/assets/images/vv-icn-search-magnifying-glass.png') no-repeat;
+  background: url('assets/images/vv-icn-search-magnifying-glass.png') no-repeat;
   height: 30px;
   position: absolute;
   top: 20px;
@@ -145,7 +145,7 @@ header {
 
 .sorted + ol::before {
   content: '';
-  background-image: url('/assets/images/vv-arrow-menu-and-filter.svg');
+  background-image: url('assets/images/vv-arrow-menu-and-filter.svg');
   background-position: center;
   background-size: cover;
   display: block;
@@ -176,10 +176,10 @@ li label {
 li input {
   position: absolute;
   cursor: pointer;
-  left: -20px;
   top: 0;
-  width: 160px;
+  width: 120px;
   height: 20px;
+  z-index: 100;
 }
 
 li input + ol > li {
@@ -208,14 +208,14 @@ li input:checked + ol > li {
 }
 
 .single:checked + .custom-checkboxes::before {
-  background: url('./assets/images/vv-check.svg') no-repeat;
+  background: url('assets/images/vv-check.svg') no-repeat;
   content: '';
   display: block;
   height: 100px;
   position: absolute;
   width: 100px;
-  top: 3px;
-  left: 3px;
+  top: 6px;
+  left: 4px;
 }
 
 .single:checked + .custom-checkboxes {
@@ -224,6 +224,9 @@ li input:checked + ol > li {
 
 .checkbox-label {
   text-transform: uppercase;
+}
+
+input.aside-checkbox.single {
 }
 
 label {
@@ -337,7 +340,7 @@ main {
   }
 
   header #background-image {
-    background: url('/assets/images/vv-grid-bg.jpg');
+    background: url('assets/images/vv-grid-bg.jpg');
     display: block;
     height: 225px;
     width: 100%;
@@ -348,7 +351,7 @@ main {
   }
 
   #hamburger-icon {
-    background: url('/assets/images/vv-icn-filter.svg') no-repeat;
+    background: url('assets/images/vv-icn-filter.svg') no-repeat;
     display: block;
     height: 28px;
     position: absolute;
