@@ -18,25 +18,9 @@ const recentDate = () => {
 recentDate();
 
 const openFilterMenu = event => {
-  document.querySelector('#hamburger-menu').classList.toggle('view-list');
+  document.querySelector('.hamburger-menu').classList.toggle('view-list');
 };
 
 document
   .querySelector('#hamburger-icon')
   .addEventListener('click', openFilterMenu);
-
-const closeFilterMenu = event => {
-  document.querySelector('#hamburger-menu').classList.remove('view-list');
-};
-
-document
-  .querySelector('#close-menu-container')
-  .addEventListener('click', closeFilterMenu);
-
-document
-  .querySelector('#search-bar')
-  .addEventListener('click', closeFilterMenu);
-
-document
-  .querySelector('#main-container')
-  .addEventListener('click', closeFilterMenu);
