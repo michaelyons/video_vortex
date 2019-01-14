@@ -18,7 +18,7 @@ const recentDate = () => {
 recentDate();
 
 const openFilterMenu = event => {
-  document.querySelector('.hamburger-menu').classList.toggle('view-list');
+  document.querySelector('.small-menu').classList.toggle('menu-hidden');
 };
 
 document
