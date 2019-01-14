@@ -342,7 +342,7 @@ main {
   box-shadow: 0 -1px 0 rgba(169, 0, 255, 1), -3px 1px 0 rgba(16, 10, 255, 1),
     2px 1px 0 rgba(255, 0, 105, 1);
   height: 2px;
-  margin: 60px auto;
+  margin: 10px auto;
   overflow: hidden;
   width: 100%;
 }
