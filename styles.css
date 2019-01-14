@@ -20,6 +20,8 @@ body {
   z-index: -10;
 }
 
+/****** heading content ******/
+
 header {
   height: 100%;
   overflow: hidden;
@@ -61,6 +63,8 @@ header {
   text-transform: uppercase;
   z-index: 1;
 }
+
+/****** search container content ******/
 
 #search-container {
   padding-bottom: 1rem;
@@ -121,10 +125,17 @@ header {
   text-shadow: -1px 0 0 rgba(169, 0, 255, 1), -2px 0 0 rgba(16, 10, 255, 1);
 }
 
+#search-bar:focus::-webkit-input-placeholder {
+  color: #000;
+  text-shadow: none;
+}
+
 #filter-search {
   flex: 3;
   min-width: 25%;
 }
+
+/****** filter sidebar content ******/
 
 .sorted {
   opacity: 0;
@@ -151,10 +162,6 @@ header {
 
 .sorted:checked + ol::before {
   transform: rotate(90deg);
-}
-
-.sorted:checked + .checkbox-label {
-  color: #f25597;
 }
 
 li {
@@ -232,16 +239,8 @@ li input:checked + ol > li {
   text-transform: uppercase;
 }
 
-.single:checked + label {
-  color: #f25597;
-}
-
 label {
   font-size: 17px;
-}
-
-.add-color {
-  color: #f25597;
 }
 
 ol {
@@ -250,10 +249,7 @@ ol {
   padding: 0;
 }
 
-#search-bar:focus::-webkit-input-placeholder {
-  color: #000;
-  text-shadow: none;
-}
+/****** video list main content ******/
 
 #main-container {
   color: #fff;
@@ -349,6 +345,8 @@ main {
   overflow: hidden;
   width: 100%;
 }
+
+/****** media queries ******/
 
 @media only screen and (max-width: 1137px) {
   #background-video {
