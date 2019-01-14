@@ -22,11 +22,7 @@
   8. 320 x 300px
 - Import fonts
   - Pexico
-- Search Functionality & Design
 - Checkboxes Working
-- Filtering capabilities of list
 - Reveal subcatigories of filters
   - For example, “Format” contains Blu-Ray, DVD, and VHS which are accessed via a “twirl-down” disclosure to hide/show
 - Background video switch to static raster image <= 1024px
-
-All you’ll need to produce is a functioning layout for anything over 1280 pixels wide as well as mobile layouts for under 1024 pixels and 375 pixels (although these are very close).
