@@ -377,6 +377,11 @@ main {
     right: 70px;
     top: 20px;
     width: 28px;
+    cursor: pointer;
+  }
+
+  #hamburger-icon:hover {
+    transform: scale(1.1, 1.1);
   }
 
   #hamburger-menu-label {
