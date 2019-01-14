@@ -66,6 +66,7 @@ header {
 
 #search-container {
   width: 100%;
+  padding-bottom: 1rem;
 }
 
 #hamburger-icon,
@@ -77,8 +78,8 @@ header {
   position: relative;
 }
 
-#search-form:before,
-#search-form:after {
+#search-form::before,
+#search-form::after {
   background: #fff;
   box-shadow: 0px 2px 0 rgba(169, 0, 255, 1), -4px 2px 0 rgba(16, 10, 255, 1),
     2px 2px 0 rgba(255, 0, 105, 1);
@@ -96,7 +97,8 @@ header {
 }
 
 #search-icon {
-  background: url('assets/images/vv-icn-search-magnifying-glass.png') no-repeat;
+  background: url('./assets/images/vv-icn-search-magnifying-glass.png')
+    no-repeat;
   height: 30px;
   position: absolute;
   top: 20px;
@@ -141,11 +143,12 @@ header {
 
 .aside-checkbox {
   opacity: 0;
+  margin: 0 0 20px;
 }
 
 .sorted + ol::before {
   content: '';
-  background-image: url('assets/images/vv-arrow-menu-and-filter.svg');
+  background-image: url('./assets/images/vv-arrow-menu-and-filter.svg');
   background-position: center;
   background-size: cover;
   display: block;
@@ -217,7 +220,15 @@ li input:checked + ol > li {
   top: 6px;
   left: 4px;
 }
+.checkbox-values {
+  margin-right: 3rem;
+  font-size: 12px;
+}
 
+.filter-values-container {
+  display: flex;
+  justify-content: space-between;
+}
 .single:checked + .custom-checkboxes {
   border: 2px solid #f25597;
 }
@@ -226,15 +237,12 @@ li input:checked + ol > li {
   text-transform: uppercase;
 }
 
-input.aside-checkbox.single {
+.single:checked + label {
+  color: #f25597;
 }
 
 label {
   font-size: 17px;
-}
-
-.aside-checkbox {
-  margin: 0 0 20px;
 }
 
 ol {
@@ -302,8 +310,8 @@ main {
   font-size: 7px;
   margin: 5px 0 8px;
   position: relative;
-  text-shadow: -6.4px -0.5px 0 rgba(169, 0, 255, 1),
-    2.7px 0.8px 0 rgba(16, 10, 255, 1), 1px 0.8px 0 rgba(255, 0, 105, 1);
+  text-shadow: -6.8px -0.8px 0 rgba(169, 0, 255, 1),
+    2.7px 0.85px 0 rgba(16, 10, 255, 1), 1px 0.85px 0 rgba(255, 0, 105, 1);
   width: 100%;
 }
 
@@ -351,7 +359,7 @@ main {
   }
 
   #hamburger-icon {
-    background: url('assets/images/vv-icn-filter.svg') no-repeat;
+    background: url('./assets/images/vv-icn-filter.svg') no-repeat;
     display: block;
     height: 28px;
     position: absolute;
