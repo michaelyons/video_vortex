@@ -95,6 +95,7 @@ header {
 
 #search-form:after {
   bottom: 0;
+  margin-bottom: 3px;
   top: unset;
 }
 
@@ -262,7 +263,7 @@ ol {
 
 .small-menu {
   border: 1px solid #fff;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.817);
   padding-top: 20px;
   position: absolute;
   right: 0;
