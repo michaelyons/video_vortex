@@ -348,7 +348,7 @@ main {
 
 /****** media queries ******/
 
-@media only screen and (max-width: 1137px) {
+@media only screen and (max-width: 1024px) {
   #background-video {
     display: none;
   }
@@ -402,7 +402,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
   #hamburger-menu-label {
     display: none;
   }
