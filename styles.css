@@ -83,8 +83,8 @@ header {
 #search-form::before,
 #search-form::after {
   background: #fff;
-  box-shadow: 0 2px 0 rgba(169, 0, 255, 1), -4px 2px 0 rgba(16, 10, 255, 1),
-    2px 2px 0 rgba(255, 0, 105, 1);
+  box-shadow: -1.75px 2px 0 rgba(169, 0, 255, 1),
+    -4px 2px 0 rgba(16, 10, 255, 1), 2px 2px 0 rgba(255, 0, 105, 1);
   content: '';
   display: block;
   height: 2px;
@@ -138,14 +138,14 @@ header {
 
 /****** filter sidebar content ******/
 
-.sorted {
-  opacity: 0;
-  z-index: 4;
-}
-
 .aside-checkbox {
   opacity: 0;
   margin: 0 0 20px;
+}
+
+.sorted {
+  opacity: 0;
+  z-index: 4;
 }
 
 .sorted + ol::before {
@@ -252,6 +252,10 @@ ol {
 
 /****** video list main content ******/
 
+main {
+  flex: 8;
+}
+
 #main-container {
   color: #fff;
   display: flex;
@@ -274,10 +278,6 @@ ol {
 
 .menu-hidden {
   display: none;
-}
-
-main {
-  flex: 8;
 }
 
 #found-film-heading {
@@ -321,8 +321,8 @@ main {
   font-size: 7px;
   margin: 5px 0 8px;
   position: relative;
-  text-shadow: -6.8px -0.8px 0 rgba(169, 0, 255, 1),
-    2.7px 0.85px 0 rgba(16, 10, 255, 1), 1px 0.85px 0 rgba(255, 0, 105, 1);
+  text-shadow: -6.8px -0.75px 0 rgba(169, 0, 255, 1),
+    2.9px 0.75px 0 rgba(16, 10, 255, 1), 1px 0.75px 0 rgba(255, 0, 105, 1);
   width: 100%;
 }
 
@@ -339,8 +339,8 @@ main {
 
 .bottom-line {
   background: #fff;
-  box-shadow: 0 -1.5px 0 rgba(169, 0, 255, 1), -3px 1.6px 0 rgba(16, 10, 255, 1),
-    2px 1.5px 0 rgba(255, 0, 105, 1);
+  box-shadow: 0 -1px 0 rgba(169, 0, 255, 1), -3px 1px 0 rgba(16, 10, 255, 1),
+    2px 1px 0 rgba(255, 0, 105, 1);
   height: 2px;
   margin: 60px auto;
   overflow: hidden;
